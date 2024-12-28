@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Spars Electric - Revolutionizing electric mobility with eco-friendly electric scooters, bikes, and autos. Trusted dealer network across India.">
+  <meta name="keywords" content="Electric Scooters, Electric Bikes, Electric Autos, Eco-friendly vehicles, Electric Vehicle Dealers, Spars Electric, Electric Scooters India EV bike dealership in India
+  Electric bike dealer near me
+  Best EV bikes in Delhi and Noida
+  Affordable electric bikes in India
+  Green mobility solutions
+  Electric vehicle dealerships in India
+  Sparsh Electric EV scooters and bikes
+  Eco-friendly two-wheelers
+  Top electric bikes dealership
+  EV dealership opportunities in India">
+  <meta name="author" content="Spars Electric">
+  <meta name="description" content="Sparsh Electric is a leading manufacturer and dealership of electric bikes and scooters in India. Based in Delhi and Noida, we offer affordable, eco-friendly, and high-performance EVs. Explore dealership opportunities and join the green mobility revolution.">
+  <meta name="keywords" content="EV bike manufacturer, electric scooter dealer, green mobility, eco-friendly vehicles, electric bike dealership, Made in India EVs, Sparsh Electric, Delhi, Noida, electric vehicles in India">
+  <meta name="author" content="Sparsh Electric">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Sparsh Electric - EV Bike and Scooter Manufacturer in India">
+  <meta property="og:description" content="Join Sparsh Electric for cutting-edge electric bikes and scooters. Manufactured in India with world-class quality, we provide dealership opportunities across India.">
+  <meta property="og:image" content="https://www.sparshelectric.com/images/ev-banner.jpg">
+  <meta property="og:url" content="https://www.sparshelectric.com">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sparsh Electric - EV Bike and Scooter Manufacturer in India">
+  <meta name="twitter:description" content="Discover eco-friendly electric vehicles with Sparsh Electric. High-performance, affordable EVs made in India. Explore dealership opportunities.">
+  <meta name="twitter:image" content="https://www.sparshelectric.com/images/ev-banner.jpg">
+
+  <!-- Additional SEO Enhancements -->
+  <link rel="canonical" href="https://www.sparshelectric.com">
+  <meta name="theme-color" content="#00aaff">
+  <meta name="rating" content="general">
+
+  <!-- Favicon -->
+  <link rel="icon" href="./images/logo.png" type="image/x-icon">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./navnar/navbar.css">
+  <link rel="stylesheet" href="./footer/footer.css">
+  <link rel="stylesheet" href="./testiomonial/testiomonial.css">
+  <link rel="stylesheet" href="/about/about.css">
+  <title>Spars Electric</title>
+
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div class="fixed">
+    <div class="top-bar">
+      <div>
+        📞 +91 7521947910 | ✉️ info@sparseelectric.com
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank" title="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" title="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a href="https://www.youtube.com" target="_blank" title="YouTube">
+          <i class="fab fa-youtube"></i>
+        </a>
+      </div>
+    </div>
+    <!-- Navbar -->
+    <nav>
+      <div class="logo">
+        <img src="./images/logo.png" alt="Logo">
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">HOME</a></li>
+        <li><a href="/about/about.html">ABOUT</a></li>
+        <li><a href="#">OUR <i class="fa-sharp-duotone fa-solid fa-motorcycle"></i>
+            SCOTTY</a>
+          <ul class="dropdown">
+            <li><a href="./Singlelight/singlelight.html">Single Light Scooty</a></li>
+            <li><a href="/Double/DoubleLightScooty.html">Double Light Scooty</a></li>
+            <li><a href="/Double/DoubleLightScooty.html">Scooty Battry</a></li>
+          </ul>
+        </li>
+        <li><a href="#">EVENT/GALLERY</a>
+          <ul class="dropdown">
+            <li><a href="/RecentEvents/RecentEvents.html">Recent Events</a></li>
+            <li><a href="/Gallery/Gallery.html">Gallery</a></li>
+          </ul>
+        </li>
+        <li><a href="/CONTACT/contact.html">CONTACT</a></li>
+      </ul>
+      <a href="#" class="book-now" id="open-popup">BOOK NOW</a>
+
+      <!-- Mobile Menu -->
+      <div class="menu-toggle" id="mobile-menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </nav>
+  </div>
+
+
+  <!-- Popup Form -->
+  <div class="popup-overlay" id="popup-overlay"></div>
+  <div class="popup-form" id="popup-form">
+    <button class="popup-close" id="close-popup">&times;</button>
+    <h2>Book Now</h2>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- hero section -->
+
+
+
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <h1 id="heroTitle">Discover the Future of Electric Mobility</h1>
+      <p id="heroDescription">Experience high-performance electric scooters, bikes, and autos for a greener tomorrow.
+      </p>
+      <a href="#products">Explore Products</a>
+    </div>
+    <div class="hero-image">
+      <img id="heroImage" src="./images/1.png" alt="Electric Scooter EV bike manufacturers in India
+      Electric vehicle manufacturing companies
+      Made in India EV bikes ">
+    </div>
+  </section>
+
+  <!-- Product Slider -->
+  <div class="slider-container" id="products">
+    <div class="slider">
+      <div class="product-card">
+        <img src="./images/exploremore1.jpg" alt="Electric Scooter">
+        <h3>EV bike manufacturers in India</h3>
+        <p>Sparsh Electric is proud to play a pivotal role in transforming India transportation landscape by offering sustainable and innovative EV solutions. Our vision is to make green mobility accessible to every corner of the country while driving India progress toward a cleaner future.</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/exploremore2.png" alt="Electric Bike">
+        <h3>Nationwide Dealership Opportunities</h3>
+        <p>With a commitment to sustainability and innovation, Sparsh Electric produces state-of-the-art electric bikes designed to meet the diverse needs of Indian consumers. Our bikes are built for efficiency, durability, and style, ensuring a seamless transition to green mobility</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/exploremore.png" alt="Electric Auto">
+        <h3>Top electric bikes dealership</h3>
+        <p>Discover Spars Electric, India trusted manufacturer and dealership for electric bikes, scooters, and eco-friendly vehicles. Based in Delhi and Noida, we offer top-quality EVs, cutting-edge technology, and nationwide dealership opportunities. Join us in revolutionizing green mobility with affordable and sustainable electric vehicles designed for Indian roads.</p>
+      </div>
+      <div class="product-card">
+        <img src="./images/4.png" alt="LED Lights">
+        <h3>Electric vehicle manufacturing companies</h3>
+        <p>Our manufacturing process focuses on precision and excellence, leveraging advanced technology and locally sourced materials to produce eco-friendly vehicles. Sparsh Electric’s EVs are designed to cater to a diverse range of users, offering solutions for personal, commercial, and business needs. With an emphasis on affordability, durability, and performance, our products are built to excel in Indian conditions</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- about section -->
+
+  <section class="about-section">
+    <div class="container">
+      <div class="about-content">
+
+        <div class="images">
+          <div class="image-main">
+            <img src="./images/a2.png" alt="Main Office">
+          </div>
+          <div class="award">
+
+            <h2>1k+</h2>
+            <p>BEST SCOOTIE DEALER AWARD</p>
+          </div>
+          <div class="image-overlay">
+            <img src="./images/a1.png" alt="Office Setup">
+          </div>
+        </div>
+        <div class="right-content">
+
+          <div class="faq">
+              <h2>General Questions</h2>
+  
+              <div class="faq-item">
+                  <div class="faq-question"> How long does it take to charge an electric scooter?</div>
+                  <div class="faq-answer">Charging time varies by model. Typically, it takes 4 to 8 hours to fully charge a scooter using the included charger.</div>
+              </div>
+  
+              <div class="faq-item">
+                  <div class="faq-question">What is the range of your electric scooters on a single charge?</div>
+                  <div class="faq-answer"> The range depends on the model, but most Spars Electric scooters can travel between 20 to 60 miles on a single charge, depending on factors like terrain, rider weight, and speed.</div>
+              </div>
+  
+              <div class="faq-item">
+                  <div class="faq-question"> What is the warranty period for your electric scooters?</div>
+                  <div class="faq-answer">We offer a standard 1-year warranty on most models, covering the battery, motor, and controller. Please check the specific warranty details for the model you're interested in.</div>
+              </div>
+              <div class="faq-item">
+                <div class="faq-question">How fast can your electric scooters go?</div>
+                <div class="faq-answer"> Our scooters have top speeds ranging from 15 to 50 mph, depending on the motor wattage and model.</div>
+            </div>
+  
+            <div class="faq-item">
+                <div class="faq-question">What kind of maintenance do electric scooters require?</div>
+                <div class="faq-answer">Regular maintenance includes checking tire pressure, brakes, and the battery. Electric scooters have fewer moving parts than gas scooters, so maintenance is minimal.</div>
+            </div>
+  
+            <div class="faq-item">
+                <div class="faq-question">Can I test-ride a scooter before buying?</div>
+                <div class="faq-answer">Absolutely! Visit our dealership to schedule a test ride and experience the performance firsthand.</div>
+            </div>
+          </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- who it work -->
+
+  <section class="how-it-works">
+    <div class="container">
+    
+      <h2>How It Work</h2>
+      <h1>What advantages will you get using an electric scooter?</h1>
+     
+      
+      <div class="steps">
+        <div class="step">
+          <div class="icon-wrapper">
+            <div class="step-icon"> <img src="./images/process-icon-4-1.svg" alt=""></div>
+          </div>
+          <h3>Environmentally Friendly</h3>
+          <p>
+            Electric scooters produce zero emissions during operation, reducing air and noise pollution compared to
+            gasoline-powered scooters.
+          </p>
+        </div>
+        <div class="step">
+          <div class="icon-wrapper">
+            <div class="step-icon"><img src="./images/process-icon-4-2.svg" alt=""></div>
+          </div>
+          <h3>Cost-Effective</h3>
+          <p>
+            Electric scooters have lower operating costs than gasoline scooters since electricity is generally cheaper
+            than gasoline.
+          </p>
+        </div>
+        <div class="step">
+          <div class="icon-wrapper">
+            <div class="step-icon"><img src="./images/process-icon-4-3.svg" alt=""></div>
+          </div>
+          <h3>Convenience</h3>
+          <p>
+            Electric scooters are compact and lightweight, making them easy to maneuver in traffic and to park in tight
+            spaces.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- why you choose us -->
+
+  <div class="container">
+   
+    <div class="content">
+    
+        <div class="image-gallery">
+            <img src="./images/3.avif" alt="Electric Auto Rickshaw">
+            <img src="./images/4.png" alt="Electric Scooters">
+            <img src="./images/4.png" alt="Electric Bike">
+            <img src="./images/3.avif" alt="Electric Bike">
+
+        </div>
+        <div class="details">
+            <h2> <h1>Why Choose Us</h1></h2>
+            <p>Choosing Spars Electric stands out as a clear choice for several compelling reasons. First and foremost, Spars Electric epitomizes innovation in the realm of electric mobility.</p>
+            <div class="features">
+                <div class="feature">
+                    <img src="./images/wcu-box-icon-1.svg" alt="" class="">
+                    <h3>Wide range of brands</h3>
+                    <p>Dynamically redefine flexible core competencies with synergistic innovation.</p>
+                </div>
+                <div class="feature">
+                  <img src="./images/wcu-box-icon-2.svg" alt="">
+                    <h3>Get Reasonable Price</h3>
+                    <p>Reasonable redefine flexible core competencies with synergistic efficiency.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- text animation -->
+
+<section class="counter-section">
+  <div class="counter">
+    <div class="counter-icon"><img src="./images/counter_icon_2_1.svg" alt=""></div>
+    <div class="counter-number" data-target="27600">0  
+    </div>
+    <div><i class="fas fa-plus"></i></div> 
+    <div class="counter-label">Scooties for Sale</div>
+  </div>
+  <div class="counter">
+    <div class="counter-icon"><img src="./images/counter_icon_2_2.svg" alt=""></div>
+    <div class="counter-number" data-target="1600">0</div>
+    <div><i class="fas fa-plus"></i></div> 
+
+    <div class="counter-label">Verified Dealers</div>
+  </div>
+  <div class="counter">
+    <div class="counter-icon"><img src="./images/counter_icon_2_3.svg" alt=""></div>
+    <div class="counter-number" data-target="25600">0</div>
+    <div><i class="fas fa-plus"></i></div> 
+
+    <div class="counter-label">Happy Customers</div>
+  </div>
+  <div class="counter">
+    <div class="counter-icon"><img src="./images/counter_icon_2_4.svg" alt=""></div>
+    <div class="counter-number" data-target="18600">0 +</div>
+    <div><i class="fas fa-plus"></i></div> 
+
+    <div class="counter-label">Active Users</div>
+  </div>
+</section>
+
+
+
+<!-- testomial section -->
+
+<div class="testimonial-section">
+  <h2>Our Customer Feedback</h2>
+  <div class="testimonial-container">
+      <div class="testimonial-cards" id="testimonial-cards">
+          <!-- Testimonial cards will be injected here by JavaScript -->
+      </div>
+  </div>
+ 
+</div>
+
+
+
+   <!-- service -->
+
+  <section class="service-section">
+    <div class="left-image">
+        <img src="./images/home1.jpg" alt="Service Image 1" loading="lazy">
+        <img src="./images/home2.jpg" alt="Service Image 2" loading="lazy">
+        <img src="./images/home3.jpg" alt="Service Image 3" loading="lazy">
+        <img src="./images/home3.jpg" alt="Service Image 4" loading="lazy">
+        <img src="./images/home1.jpg" alt="Service Image 1" loading="lazy">
+        <img src="./images/home2.jpg" alt="Service Image 2" loading="lazy">
+        <img src="./images/home1.jpg" alt="Service Image 1" loading="lazy">
+        <img src="./images/home2.jpg" alt="Service Image 2" loading="lazy">
+        <img src="./images/home2.jpg" alt="Service Image 2" loading="lazy">
+
+       
+    </div>
+    <div class="right-content">
+
+        <div class="faq">
+            <h2>General Questions</h2>
+
+            <div class="faq-item">
+                <div class="faq-question"> How long does it take to charge an electric scooter?</div>
+                <div class="faq-answer">Charging time varies by model. Typically, it takes 4 to 8 hours to fully charge a scooter using the included charger.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">What is the range of your electric scooters on a single charge?</div>
+                <div class="faq-answer"> The range depends on the model, but most Spars Electric scooters can travel between 20 to 60 miles on a single charge, depending on factors like terrain, rider weight, and speed.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question"> What is the warranty period for your electric scooters?</div>
+                <div class="faq-answer">We offer a standard 1-year warranty on most models, covering the battery, motor, and controller. Please check the specific warranty details for the model you're interested in.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-question">How fast can your electric scooters go?</div>
+              <div class="faq-answer"> Our scooters have top speeds ranging from 15 to 50 mph, depending on the motor wattage and model.</div>
+          </div>
+
+          <div class="faq-item">
+              <div class="faq-question">What kind of maintenance do electric scooters require?</div>
+              <div class="faq-answer">Regular maintenance includes checking tire pressure, brakes, and the battery. Electric scooters have fewer moving parts than gas scooters, so maintenance is minimal.</div>
+          </div>
+
+          <div class="faq-item">
+              <div class="faq-question">Can I test-ride a scooter before buying?</div>
+              <div class="faq-answer">Absolutely! Visit our dealership to schedule a test ride and experience the performance firsthand.</div>
+          </div>
+        </div>
+    </div>
+</section>
+
+  <!-- footer -->
+
+
+  <footer class="footer">
+    <div class="containers">
+      <div class="footer-section">
+        <h3>About Company</h3>
+        <p>We offer a diverse range of electric scooters to suit every rider's needs and preferences.</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/sparselectricev"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-google"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h3>Useful Links</h3>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Product</a></li>
+          <li><a href="#">Event/Gallery</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Website Login</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p><i class="fa fa-phone"></i> +91 7521947910</p>
+        <p><i class="fa fa-envelope"></i> info@sparseelectric.com</p>
+        <p><i class="fa fa-map-marker"></i> Sparse Electric C-77, Sector-63A, Noida, uttar pradesh 201307</p>
+      </div>
+
+      <div class="footer-section">
+        <h3>Location Map</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3502.2917796030815!2d77.39329397550041!3d28.621015975671078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDM3JzE1LjciTiA3N8KwMjMnNDUuMSJF!5e0!3m2!1sen!2sin!4v1729413581580!5m2!1sen!2sin"
+          width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© Copyright 2024 Spars Electric, Design & Develop By
+        <a href="#">Aniket Chaursiya</a>
+      </p>
+      <div class="footer-links">
+        <a href="#">Terms of use</a> |
+        <a href="#">Privacy Environmental</a> |
+        <a href="#">Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./navnar/navbar.js"></script>
+  <script src="./script.js"></script>
+  <script src="./testiomonial/testiomonial.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const questions = document.querySelectorAll('.faq-question');
+        questions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isOpen = answer.style.display === 'block';
+
+                document.querySelectorAll('.faq-answer').forEach(a => a.style.display = 'none');
+                
+                answer.style.display = isOpen ? 'none' : 'block';
+            });
+        });
+    });
+</script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Spars Electric",
+      "url": "https://www.sparseelectric.com",
+      "logo": "https://www.sparseelectric.com/images/logo.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-7521947910",
+        "contactType": "Customer Service"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C-77, Sector-63A",
+        "addressLocality": "Noida",
+        "addressRegion": "Uttar Pradesh",
+        "postalCode": "201307",
+        "addressCountry": "IN"
+      },
+      "sameAs": [
+        "https://www.facebook.com/sparselectricev",
+        "https://www.instagram.com/sparselectric",
+        "https://www.linkedin.com/company/sparselectric"
+      ]
+    }
+  </script>
+</body>
+
+</html>

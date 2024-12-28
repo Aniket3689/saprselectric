@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@600&display=swap"
+        rel="stylesheet">
+ <link rel="icon" href="/images/logo.png" type="image/x-icon">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/navnar/navbar.css">
+    <link rel="stylesheet" href="/footer/footer.css">
+    <title>Contact us </title>
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="fixed">
+        <div class="top-bar">
+            <div>
+                📞 +91 7521947910 | ✉️ info@sparseelectric.com
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" title="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <!-- Navbar -->
+        <nav>
+            <div class="logo">
+                <img src="/images/logo.png" alt="Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="/index.html">HOME</a></li>
+                <li><a href="/about/about.html">ABOUT</a></li>
+                <li><a href="#">OUR <i class="fa-sharp-duotone fa-solid fa-motorcycle"></i>
+                        SCOTTY</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Single Light Scooty</a></li>
+                        <li><a href="#">Double Light Scooty</a></li>
+                        <li><a href="#">Scooty Battry</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">EVENT/GALLERY</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Recent Events</a></li>
+                        <li><a href="#">Gallery</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <a href="#" class="book-now" id="open-popup">BOOK NOW</a>
+
+            <!-- Mobile Menu -->
+            <div class="menu-toggle" id="mobile-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!-- Popup Form -->
+    <div class="popup-overlay" id="popup-overlay"></div>
+    <div class="popup-form" id="popup-form">
+        <button class="popup-close" id="close-popup">&times;</button>
+        <h2>Book Now</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <!-- contact us from -->
+  
+
+
+    <section id="contact-us" style="padding: 40px; background-color: #f9f9f9;">
+        <h2 style="text-align: center; color: #333;">Get In Touch</h2>
+        <p style="text-align: center; font-size: 16px; color: #555;">
+          Looking for the best electric scooters? We're here to help! Reach out to us for inquiries, support, or any questions.
+        </p>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: flex-start; max-width: 1200px; margin: 0 auto;">
+          <!-- Contact Form -->
+          <div style="flex: 1; min-width: 300px; max-width: 600px;">
+            <form action="/submit-contact-form" method="post" style="display: flex; flex-direction: column; gap: 15px;">
+              <label for="name" style="font-weight: bold; color: #333;">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your Name" style="padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+
+              <label for="name" style="font-weight: bold; color: #333;">Phone Number</label>
+              <input type="number" id="name" name="name" required placeholder="Your Phone Number" style="padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+      
+              <label for="email" style="font-weight: bold; color: #333;">Email</label>
+              <input type="email" id="email" name="email" required placeholder="Your Email" style="padding: 10px; border: 1px solid #ddd; border-radius: 5px;">
+      
+              <label for="message" style="font-weight: bold; color: #333;">Message</label>
+              <textarea id="message" name="message" required placeholder="Your Message" style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; height: 100px;"></textarea>
+      
+              <button type="submit" style="padding: 10px 20px; background-color: #ffcc00; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Send Message</button>
+            </form>
+            <p style="margin-top: 20px; font-size: 14px; color: #555;">
+              📞 Call us: <a href="tel:+1234567890" style="color: #007bff;">+91 7080515101</a> | 📧 Email: <a href="mailto:info@electricscooters.com" style="color: #007bff;">info@electricscooters.com</a>
+            </p>
+          </div>
+      
+          <!-- Embedded Map -->
+          <div style="flex: 1; min-width: 300px; max-width: 600px; border: 1px solid #ddd; border-radius: 5px; overflow: hidden;">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3502.2917796030815!2d77.39329397550041!3d28.621015975671078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDM3JzE1LjciTiA3N8KwMjMnNDUuMSJF!5e0!3m2!1sen!2sin!4v1729413581580!5m2!1sen!2sin" 
+              width="100%" 
+              height="400" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy">
+            </iframe>
+          </div>
+        </div>
+      </section>
+    <!-- footer-setion -->
+
+    <footer class="footer">
+        <div class="containers">
+            <div class="footer-section">
+                <h3>About Company</h3>
+                <p>We offer a diverse range of electric scooters to suit every rider's needs and preferences.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-google"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Product</a></li>
+                    <li><a href="#">Event/Gallery</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Website Login</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p><i class="fa fa-phone"></i> +91 7521947910</p>
+                <p><i class="fa fa-envelope"></i> info@sparseelectric.com</p>
+                <p><i class="fa fa-map-marker"></i> Sparse Electric C-77, Sector-63A, Noida, uttar pradesh 201307</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Location Map</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3502.2917796030815!2d77.39329397550041!3d28.621015975671078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjjCsDM3JzE1LjciTiA3N8KwMjMnNDUuMSJF!5e0!3m2!1sen!2sin!4v1729413581580!5m2!1sen!2sin"
+                    width="100%" height="150" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© Copyright 2024 Spars Electric, Design & Develop By
+                <a href="#">Aniket Chaursiya</a>
+            </p>
+            <div class="footer-links">
+                <a href="#">Terms of use</a> |
+                <a href="#">Privacy Environmental</a> |
+                <a href="#">Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/navnar/navbar.js"></script>
+</body>
+
+</html>

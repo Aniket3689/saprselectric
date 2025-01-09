@@ -50,6 +50,7 @@
 
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./navnar/navbar.css">
+  <link rel="stylesheet" href="/product/product.css">
   <link rel="stylesheet" href="./footer/footer.css">
   <link rel="stylesheet" href="./testiomonial/testiomonial.css">
   <link rel="stylesheet" href="/about/about.css">
@@ -154,30 +155,8 @@
   </section>
 
   <!-- Product Slider -->
-  <div class="slider-container" id="products">
-    <div class="slider">
-      <div class="product-card">
-        <img src="./images/exploremore1.jpg" alt="Electric Scooter">
-        <h3>EV bike manufacturers in India</h3>
-        <p>Sparsh Electric is proud to play a pivotal role in transforming India transportation landscape by offering sustainable and innovative EV solutions. Our vision is to make green mobility accessible to every corner of the country while driving India progress toward a cleaner future.</p>
-      </div>
-      <div class="product-card">
-        <img src="./images/exploremore2.png" alt="Electric Bike">
-        <h3>Nationwide Dealership Opportunities</h3>
-        <p>With a commitment to sustainability and innovation, Sparsh Electric produces state-of-the-art electric bikes designed to meet the diverse needs of Indian consumers. Our bikes are built for efficiency, durability, and style, ensuring a seamless transition to green mobility</p>
-      </div>
-      <div class="product-card">
-        <img src="./images/exploremore.png" alt="Electric Auto">
-        <h3>Top electric bikes dealership</h3>
-        <p>Discover Spars Electric, India trusted manufacturer and dealership for electric bikes, scooters, and eco-friendly vehicles. Based in Delhi and Noida, we offer top-quality EVs, cutting-edge technology, and nationwide dealership opportunities. Join us in revolutionizing green mobility with affordable and sustainable electric vehicles designed for Indian roads.</p>
-      </div>
-      <div class="product-card">
-        <img src="./images/4.png" alt="LED Lights">
-        <h3>Electric vehicle manufacturing companies</h3>
-        <p>Our manufacturing process focuses on precision and excellence, leveraging advanced technology and locally sourced materials to produce eco-friendly vehicles. Sparsh Electric’s EVs are designed to cater to a diverse range of users, offering solutions for personal, commercial, and business needs. With an emphasis on affordability, durability, and performance, our products are built to excel in Indian conditions</p>
-      </div>
-    </div>
-  </div>
+ 
+  <div id="blog-container" class="blog-container"></div>
 
 
   <!-- about section -->
@@ -482,6 +461,111 @@
   <script src="./navnar/navbar.js"></script>
   <script src="./script.js"></script>
   <script src="./testiomonial/testiomonial.js"></script>
+  <script>
+    // JSON data for blogs
+    const blogs = [
+      
+      {
+        title: "Insights into the MCS Act and Its Relevance to Businesses Today",
+        date: "18-12-2024",
+        description: "The MCS Act holds critical implications for cooperative societies...",
+        image: "../images/home1.jpg",
+        content: "Full content of the MCS Act blog. This is where the detailed blog content would go.",
+      },
+      {
+        title: "Insights into the MCS Act and Its Relevance to Businesses Today",
+        date: "18-12-2024",
+        description: "The MCS Act holds critical implications for cooperative societies...",
+        image: "../images/home2.jpg",
+        content: "Full content of the MCS Act blog. This is where the detailed blog content would go.",
+      },
+      {
+        title: "Insights into the MCS Act and Its Relevance to Businesses Today",
+        date: "18-12-2024",
+        description: "The MCS Act holds critical implications for cooperative societies...",
+        image: "../images/home3.jpg",
+        content: "Full content of the MCS Act blog. This is where the detailed blog content would go.",
+      },
+      {
+        title: "Insights into the MCS Act and Its Relevance to Businesses Today",
+        date: "18-12-2024",
+        description: "The MCS Act holds critical implications for cooperative societies...",
+        image: "../images/home4.jpg",
+        content: "Full content of the MCS Act blog. This is where the detailed blog content would go.",
+      },
+      {
+        title: "Insights into the MCS Act and Its Relevance to Businesses Today",
+        date: "18-12-2024",
+        description: "The MCS Act holds critical implications for cooperative societies...",
+        image: "../images/a5.png",
+        content: "Full content of the MCS Act blog. This is where the detailed blog content would go.",
+      },
+      {
+        title: "Insights into the MCS Act and Its Relevance to Businesses Today",
+        date: "18-12-2024",
+        description: "The MCS Act holds critical implications for cooperative societies...",
+        image: "../images/a6.png",
+        content: "Full content of the MCS Act blog. This is where the detailed blog content would go.",
+      },
+      {
+        title: "Insights into the MCS Act and Its Relevance to Businesses Today",
+        date: "18-12-2024",
+        description: "The MCS Act holds critical implications for cooperative societies...",
+        image: "../images/doblelight2.jpg",
+        content: "Full content of the MCS Act blog. This is where the detailed blog content would go.",
+      },
+      {
+        title: "Insights into the MCS Act and Its Relevance to Businesses Today",
+        date: "18-12-2024",
+        description: "The MCS Act holds critical implications for cooperative societies...",
+        image: "../images/exploremore1.jpg",
+        content: "Full content of the MCS Act blog. This is where the detailed blog content would go.",
+      },
+      {
+        title: "Insights into the MCS Act and Its Relevance to Businesses Today",
+        date: "18-12-2024",
+        description: "The MCS Act holds critical implications for cooperative societies...",
+        image: "../images/exploremore2.png",
+        content: "Full content of the MCS Act blog. This is where the detailed blog content would go.",
+      },
+      
+    ];
+
+    const container = document.getElementById('blog-container');
+
+    // Function to render blogs
+    blogs.forEach((blog, index) => {
+      const blogCard = document.createElement('div');
+      blogCard.classList.add('blog-card');
+      blogCard.onclick = () => showBlogDetail(index);
+
+      blogCard.innerHTML = `
+        <img src="${blog.image}" alt="${blog.SingleLightScotty}" class="blog-image">
+        <div class="blog-content">
+          <h3 class="blog-title">${blog.title}</h3>
+          <p class="blog-date">${blog.date}</p>
+          <p class="blog-description">${blog.description}</p>
+          <a href="javascript:void(0)" class="read-more">MORE DETAILS</a>
+        </div>
+      `;
+
+      container.appendChild(blogCard);
+    });
+
+    // Function to show blog details
+    function showBlogDetail(index) {
+      const blog = blogs[index];
+      document.body.innerHTML = `
+        <div style="padding: 20px; max-width: 800px; margin: auto; background: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+          <h1 style="font-size: 24px; margin-bottom: 10px;">${blog.title}</h1>
+          <p style="color: #888; margin-bottom: 20px;">Published on: ${blog.date}</p>
+          <img src="${blog.image}" alt="${blog.title}" style="width: 100%; border-radius: 10px; margin-bottom: 20px;">
+          <p style="font-size: 16px; color: #555;">${blog.content}</p>
+          <button onclick="location.reload()" style="padding: 10px 20px; background: #ffcc00; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Back to Blogs</button>
+        </div>
+      `;
+    }
+  </script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
         const questions = document.querySelectorAll('.faq-question');

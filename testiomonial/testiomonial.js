@@ -1,34 +1,53 @@
 const testimonialsData = [
     {
-        image: "https://via.placeholder.com/60",
+        image: "../images/review1.jpeg",
         text: "The electric scooters from Spars Electric are fantastic! They're so easy to ride and navigate through the city.",
-        author: "Naina Jha",
+        author: "Ishaan Jha",
         role: "Advocate"
     },
     {
-        image: "https://via.placeholder.com/60",
+        image: "../images/review2.jpeg",
         text: "I've been using Spars Electric scooters for my daily commute, and I'm impressed with the performance and convenience.",
-        author: "Sneha Singh",
-        role: "Lawyer"
+        author: "Ankush Singh",
+       
     },
     {
-        image: "https://via.placeholder.com/60",
+        image: "../images/review3.jpeg",
         text: "These scooters are a game-changer! They're efficient, eco-friendly, and incredibly fun to ride.",
-        author: "Preti Yadav",
-        role: "Web Developer"
+        author: "Sanjeet Yadav",
+       
     },
     {
-        image: "https://via.placeholder.com/60",
+        image: "../images/review4.jpeg",
         text: "Best investment I've made this year. These scooters are not just cost-effective but also super convenient for everyday use.",
         author: "Rahul Mehta",
-        role: "Engineer"
+       
     },
     {
-        image: "https://via.placeholder.com/60",
+        image: "../images/review5.jpeg",
+        text: "I appreciate how user-friendly and stylish these scooters are. They're perfect for short trips and commuting.",
+        author: "prdeep Kumar",
+        
+    },
+    {
+        image: "../images/review6.jpeg",
+        text: "I appreciate how user-friendly and stylish these scooters are. They're perfect for short trips and commuting.",
+        author: "Ankit Roy",
+      
+    },
+    {
+        image: "../images/review7.jpeg",
         text: "I appreciate how user-friendly and stylish these scooters are. They're perfect for short trips and commuting.",
         author: "Anita Roy",
-        role: "Designer"
+       
+    },
+    {
+        image: "../images/review8.jpeg",
+        text: "I appreciate how user-friendly and stylish these scooters are. They're perfect for short trips and commuting.",
+        author: "Anikt Roy",
+       
     }
+
 ];
 
 const testimonialCardsContainer = document.getElementById('testimonial-cards');

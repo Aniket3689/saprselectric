@@ -55,7 +55,93 @@
   <link rel="stylesheet" href="./testiomonial/testiomonial.css">
   <link rel="stylesheet" href="/about/about.css">
   <title>Spars Electric</title>
+  <style>
+    #chatbot {
+      position: fixed;
+      bottom: 20px; /* Adjust position from the bottom */
+      right: 20px; /* Adjust position from the right */
+      width: 360px;
+      height: 460px;
+      border: 2px solid #00bcd4; /* Stylish border color */
+      border-radius: 20px; /* Rounded corners for a smoother look */
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+      z-index: 9999; /* Ensures it's on top */
+      background-color: #f9f9f9; /* Light background color for contrast */
+      transition: all 0.3s ease-in-out; /* Smooth transition for interactions */
+      cursor: pointer; /* Makes the iframe clickable */
+    }
+  
+    /* Chat button styling */
+    #chat-button {
+      position: fixed;
+      bottom: 10px;
+      right: 20px;
+      background-color: #00bcd4;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50px;
+      cursor: pointer;
+      font-size: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      z-index: 9998; /* Below the chatbot iframe */
+    }
+  
+    #chat-button:hover {
+      background-color: #0097a7;
+    }
+  
+    /* Responsive for all screen sizes */
+    @media (max-width: 768px) {
+      #chatbot {
+        width: 70%; /* 70% width of the screen */
+        height: 70vh; /* 70% of the viewport height */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust to center the iframe */
+        border-radius: 20px; /* Rounded corners for mobile */
+      }
+  
+      #chat-button {
+        bottom: 10px;
+        right: 10px;
+        font-size: 18px;
+        padding: 8px 12px;
+      }
+    }
+   
 
+
+
+
+
+
+
+
+   .fixed-buttons {
+    position: fixed;
+    border-radius: 50%;
+    bottom: 55px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.fixed-buttons a {
+    display: block;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.fixed-buttons img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+
+
+  </style>
+  
 </head>
 
 <body>
@@ -145,6 +231,22 @@
       <h1 id="heroTitle">Discover the Future of Electric Mobility</h1>
       <p id="heroDescription">Experience high-performance electric scooters, bikes, and autos for a greener tomorrow.
       </p>
+      <iframe
+      src="https://www.chatbase.co/chatbot-iframe/KHUU4V-v6be1Rhz4C63av"
+      id="chatbot"
+      style="display: none;" 
+  ></iframe>
+  <div id="chat-button" onclick="toggleChatbox()">💬 Chat</div>
+ 
+  <div class="fixed-buttons">
+    <a href="tel:+917080515101" class="call-button" target="_blank">
+        <img src="./images/phone-call-svgrepo-com.svg" alt="Call">
+    </a>
+    <a href="https://wa.me/7080515101" class="whatsapp-button" target="_blank">
+        <img src="./images/whatsapp-symbol-logo-svgrepo-com.svg" alt="WhatsApp">
+    </a>
+</div>
+
       <a href="#products">Explore Products</a>
     </div>
     <div class="hero-image">
@@ -466,8 +568,8 @@
     const blogs = [
       
       {
-        title: "Insights into the MCS Act and Its Relevance to Businesses Today",
-        date: "18-12-2024",
+        title: "We bring you a range of premium electric scooters designed to revolutionize your commute and help save the planet",
+        date: "Range: 70 km per chargeTop Speed: 45 km/hFeatures: Compact design, lightweight, perfect for city rides.",
         description: "The MCS Act holds critical implications for cooperative societies...",
         image: "../images/home1.jpg",
         content: "Full content of the MCS Act blog. This is where the detailed blog content would go.",
@@ -565,6 +667,7 @@
         </div>
       `;
     }
+    
   </script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
@@ -581,6 +684,27 @@
         });
     });
 </script>
+<script>
+  // Function to toggle chatbox visibility
+  function toggleChatbox() {
+    var iframe = document.getElementById('chatbot');
+    var chatButton = document.getElementById('chat-button');
+    
+    if (iframe.style.display === "none" || iframe.style.display === "") {
+      iframe.style.display = "block";  // Show the chatbot
+      chatButton.style.display = "none";  // Hide the chat button
+    } else {
+      iframe.style.display = "none";  // Hide the chatbot
+      chatButton.style.display = "block";  // Show the chat button again
+    }
+  }
+
+  // Function to close the chatbox when clicked inside
+  document.getElementById('chatbot').addEventListener('click', function() {
+    toggleChatbox();  // Close the chatbot when clicked
+  });
+</script>
+
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
